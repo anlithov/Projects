@@ -1,13 +1,13 @@
 import './mosimac-design/mosimac.scss'
 
-import TopBar from './mosimac-design/jsx-components/1a-TopBar/TopBar';
-import Footer from './mosimac-design/jsx-components/1b-Footer/Footer';
-import ComponentsPage from './mosimac-design/jsx-components/2a-ComponentsPage/ComponentsPage';
+import TopBar from './mosimac-design/jsx-components/topbar/TopBar';
+import Footer from './mosimac-design/jsx-components/footer/Footer';
+import ComponentsPage from './mosimac-design/jsx-components/components-page/ComponentsPage';
 
 
 function App() {
   return (
-      <div  11232445756756>
+      <div   >
     <TopBar />
           <ComponentsPage />
     <Footer />
