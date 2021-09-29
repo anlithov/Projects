@@ -1,11 +1,11 @@
 import React from 'react'
 
-import { ReactComponent as Logo } from '../../../svg/logo.svg'
-import { ReactComponent as Design} from "../../../svg/design.svg";
-import { ReactComponent as Components} from "../../../svg/components.svg";
-import { ReactComponent as Typography} from "../../../svg/typography.svg";
-import { ReactComponent as Contact} from "../../../svg/contact.svg";
-import { ReactComponent as About} from "../../../svg/about.svg";
+import {ReactComponent as Logo} from '../../../svg/logo.svg'
+import {ReactComponent as Design} from "../../../svg/design.svg";
+import {ReactComponent as Components} from "../../../svg/components.svg";
+import {ReactComponent as Typography} from "../../../svg/typography.svg";
+import {ReactComponent as Contact} from "../../../svg/contact.svg";
+import {ReactComponent as About} from "../../../svg/about.svg";
 
 export default function Footer() {
     return (
@@ -29,15 +29,15 @@ export default function Footer() {
             <div className="sf_copyright">
                 <div className="flexcenter uniwrap">
                     <div className="footer-menu">
-                        <a className=" " href="https://mosimac.com/">
+                        <a className=" " href="">
                             <div className="item design">
-                               <Design/>
+                                <Design/>
                             </div>
                             <span>
                                 Design
                             </span>
                         </a>
-                        <a className=" " href="https://mosimac.com/typography">
+                        <a className=" " href="">
                             <div className="item typography">
                                 <Typography/>
                             </div>
@@ -45,7 +45,7 @@ export default function Footer() {
                                 Typography
                             </span>
                         </a>
-                        <a className=" " href="https://mosimac.com/components">
+                        <a className=" " href="">
                             <div className="item components">
                                 <Components/>
                             </div>
@@ -53,7 +53,7 @@ export default function Footer() {
                                 Components
                             </span>
                         </a>
-                        <a className=" " href="https://mosimac.com/about">
+                        <a className=" " href="">
                             <div className="item about">
                                 <About/>
                             </div>
@@ -61,7 +61,7 @@ export default function Footer() {
                                 About
                             </span>
                         </a>
-                        <a className=" " href="https://mosimac.com/contact">
+                        <a className=" " href="">
                             <div className="item contact">
                                 <Contact/>
                             </div>
@@ -77,13 +77,11 @@ export default function Footer() {
                         </div>
                         <span className="sfc_sep"> | </span>
                         <div className="sfс_text">
-
                             Site Cunstructing
-
                         </div>
                     </div>
                 </div>
-</div>
+            </div>
         </footer>
     )
 

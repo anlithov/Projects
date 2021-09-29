@@ -1,5 +1,6 @@
 import React from 'react'
 
+import TopBarTogglers from './TopBarThemeTogglers'
 import { ReactComponent as Logo } from '../../../svg/logo.svg'
 import { ReactComponent as Hamburger} from "../../../svg/hamburger.svg";
 import { ReactComponent as Design} from "../../../svg/design.svg";
@@ -92,16 +93,7 @@ export default function TopBar() {
                                 <ThemeTogg />
                             </div>
                             <div className="theme-triangle"></div>
-                            <div className="theme-boxlist">
-                                <div className="theme-item latico" onClick={() => toggleTheme('theme-latico')}></div>
-                                <div className="theme-item martin" onClick={() => toggleTheme('theme-martin')}></div>
-                                <div className="theme-item clary" onClick={() => toggleTheme('theme-clary')}></div>
-                                <div className="theme-item ricco" onClick={() => toggleTheme('theme-ricco')}></div>
-                                <div className="theme-item hyggo" onClick={() => toggleTheme('theme-hyggo')}></div>
-                                <div className="theme-item patri" onClick={() => toggleTheme('theme-patri')}></div>
-                                <div className="theme-item vermir" onClick={() => toggleTheme('theme-vermir')}></div>
-                                <div className="theme-item risana" onClick={() => toggleTheme('theme-risana')}></div>
-                            </div>
+                            <TopBarThemeTogglers  />
                         </div>
                     </nav>
                 </div>
