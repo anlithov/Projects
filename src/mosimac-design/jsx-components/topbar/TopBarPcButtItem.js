@@ -1,4 +1,4 @@
-import {ReactComponent as Design} from "../../../svg/design.svg";
+
 import React from "react";
 
 

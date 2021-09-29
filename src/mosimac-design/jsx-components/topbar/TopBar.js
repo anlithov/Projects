@@ -1,16 +1,12 @@
 import React from 'react'
-
-import TopBarPcTogList from './TopBarPcTogList'
-import { ReactComponent as Logo } from '../../../svg/logo.svg'
-import { ReactComponent as Hamburger} from "../../../svg/hamburger.svg";
-import { ReactComponent as Design} from "../../../svg/design.svg";
-import { ReactComponent as Components} from "../../../svg/components.svg";
-import { ReactComponent as Typography} from "../../../svg/typography.svg";
-import { ReactComponent as Contact} from "../../../svg/contact.svg";
-import { ReactComponent as About} from "../../../svg/about.svg";
-import { ReactComponent as ThemeTogg } from '../../../svg/theme-toggler.svg'
+import {ReactComponent as Logo} from '../../../svg/logo.svg'
+import {ReactComponent as Hamburger} from "../../../svg/hamburger.svg";
+import {ReactComponent as Design} from "../../../svg/design.svg";
+import {ReactComponent as Components} from "../../../svg/components.svg";
+import {ReactComponent as Typography} from "../../../svg/typography.svg";
+import {ReactComponent as Contact} from "../../../svg/contact.svg";
+import {ReactComponent as About} from "../../../svg/about.svg";
 import TopBarPcButtList from "./TopBarPcButtList";
-
 
 
 export default function TopBar() {

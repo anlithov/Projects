@@ -1,6 +1,7 @@
 import React from "react";
 
 
+
 export default function TopBarPcTogItem({ toggler }) {
     function setTheme(themeName) {
         localStorage.setItem('theme', themeName);
@@ -11,7 +12,9 @@ export default function TopBarPcTogItem({ toggler }) {
             setTheme(theName);
         }
     }
+
     return (
         <div className={'theme-item ' + toggler.name} onClick={() => toggleTheme(toggler.name)}></div>
     )
+
 }
