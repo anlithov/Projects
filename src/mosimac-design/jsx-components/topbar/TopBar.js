@@ -1,6 +1,6 @@
 import React from 'react'
 
-import TopBarTogglers from './TopBarThemeTogglers'
+import TopBarPcTogList from './TopBarPcTogList'
 import { ReactComponent as Logo } from '../../../svg/logo.svg'
 import { ReactComponent as Hamburger} from "../../../svg/hamburger.svg";
 import { ReactComponent as Design} from "../../../svg/design.svg";
@@ -9,18 +9,28 @@ import { ReactComponent as Typography} from "../../../svg/typography.svg";
 import { ReactComponent as Contact} from "../../../svg/contact.svg";
 import { ReactComponent as About} from "../../../svg/about.svg";
 import { ReactComponent as ThemeTogg } from '../../../svg/theme-toggler.svg'
+import TopBarPcButtList from "./TopBarPcButtList";
 
 
-function setTheme(themeName) {
-    localStorage.setItem('theme', themeName);
-    document.documentElement.className = themeName;
-}
-function toggleTheme(theName) {
-    if (!(localStorage.getItem('theme') === theName)) {
-        setTheme(theName);
-    }
-}
+
 export default function TopBar() {
+    const pcbutts = [
+        {name: 'design', svg: <Design />},
+        {name: 'typography', svg: <Typography/>},
+        {name: 'components', svg: <Components/>},
+        {name: 'about', svg: <About/>},
+        {name: 'contact', svg: <Contact/>},
+    ]
+    const togglers = [
+        { name: 'theme-latico' },
+        { name: 'theme-martin' },
+        { name: 'theme-clary' },
+        { name: 'theme-ricco' },
+        { name: 'theme-hyggo' },
+        { name: 'theme-patri' },
+        { name: 'theme-vermir' },
+        { name: 'theme-risana' },
+    ]
     return (
         <div id="menu" className="menu_base">
             <div className="menu_in uniwrap">
@@ -37,65 +47,7 @@ export default function TopBar() {
                             <Hamburger />
                         </div>
                     </div>
-                    <nav className="pc pc-butts">
-                        <div className="pcm-button to-design">
-                            <a className="" href="">
-                                <div className="item design">
-                                    <Design />
-                                </div>
-                                <span className="pcm-name">
-                                Design
-                            </span>
-                            </a>
-                        </div>
-                        <div className="pcm-button to-typography">
-                            <a className=" " href="">
-                                <div className="item typography">
-                                    <Typography />
-                                </div>
-                                <span className="pcm-name">
-                                Typography
-                            </span>
-                            </a>
-                        </div>
-                        <div className="pcm-button to-components">
-                            <a className=" " href="">
-                                <div className="item components">
-                                    <Components />
-                                </div>
-                                <span className="pcm-name">
-                                Components
-                            </span>
-                            </a>
-                        </div>
-                        <div className="pcm-button to-about">
-                            <a className="" href="">
-                                <div className="item about">
-                                    <About />
-                                </div>
-                                <span className="pcm-name">
-                                About
-                            </span>
-                            </a>
-                        </div>
-                        <div className="pcm-button to-contact">
-                            <a className=" " href="https://mosimac.com/contact">
-                                <div className="item contact">
-                                    <Contact />
-                                </div>
-                                <span className="pcm-name">
-                                Contact
-                            </span>
-                            </a>
-                        </div>
-                        <div className="theme-panel">
-                            <div className="item theme">
-                                <ThemeTogg />
-                            </div>
-                            <div className="theme-triangle"></div>
-                            <TopBarThemeTogglers  />
-                        </div>
-                    </nav>
+                    <TopBarPcButtList pcbutts={pcbutts} togglers={togglers}/>
                 </div>
             </div>
         </div>
