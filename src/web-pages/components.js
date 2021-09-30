@@ -1,13 +1,13 @@
-import React from "react";
-
+import React from 'react';
+import ComponentsNav from './_components/ComponentsNav'
+import ComponentsShowdown from './_components/ComponentsShowdown'
 
 export default function Components() {
     return (
-        <div className='nav-components'>
+        <div className="page-components">
             <ComponentsNav />
-        </div>
-        <div className='showdown-components'>
             <ComponentsShowdown />
         </div>
+
     )
 }

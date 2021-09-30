@@ -8,11 +8,11 @@ import Webpages from "./web-pages";
 function App() {
 
   return (
-      <div>
+      <>
         <TopBar />
             <Webpages />
         <Footer />
-      </div>
+      </>
   )
 }
 
