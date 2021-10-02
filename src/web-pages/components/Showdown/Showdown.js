@@ -1,14 +1,14 @@
 import React from "react";
 
 
-export default function Showdown({components, selectedNav}) {
+export default function Showdown({components, selectedTab}) {
 
     return (
         <div className="showdown-components">
             <h1>
-                {components[selectedNav].name.replace('-',' ')}
+                {components[selectedTab].name.replace('-',' ')}
             </h1>
-            {components[selectedNav].content()}
+            {components[selectedTab].content()}
         </div>
 
     )

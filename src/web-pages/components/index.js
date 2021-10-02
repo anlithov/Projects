@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import Nav from './NavBar/Nav'
+import Showdown from "./Showdown/Showdown";
 
 import ComponentsIntro from './Showdown/Items/ComponentsIntro'
 import Buttons from "./Showdown/Items/Buttons";
@@ -12,7 +13,7 @@ import Pagination from "./Showdown/Items/Pagination";
 import RadioButtons from "./Showdown/Items/RadioButtons";
 import Select from "./Showdown/Items/Select";
 import TextFields from "./Showdown/Items/TextFields";
-import Showdown from "./Showdown/Showdown";
+
 
 export default function Components() {
     const components = [
@@ -31,15 +32,17 @@ export default function Components() {
 
     const [selectedTab, setSelectedTab] = useState(0)
 
-    function handleChange
+    function handleChange(index) {
+        setSelectedTab(index)
+    }
     return (
         <div className="page-components">
-            <Nav selectedNav={selectedNav}
-                 components={components}
-                 onChange={handleChange()}/>
+            <Nav components={components}
+                 selectedTab={selectedTab}
+                 handleNavChange={handleChange}/>
             <Showdown
                 components={components}
-                selectedNav={selectedNav}/>
+                selectedTab={selectedTab}/>
         </div>
 
     )

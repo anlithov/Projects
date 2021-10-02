@@ -1,10 +1,9 @@
 import React from "react";
-import NavItem from "./NavItem";
 
-export default function Nav({components, selectedNav, onNavClick}) {
+export default function Nav({components, selectedTab, handleNavChange}) {
 
-    function handleClick(index) {
-        onNavClick(index)
+    function handleNavClick(index) {
+        handleNavChange(index)
     }
 
     return (
@@ -18,7 +17,10 @@ export default function Nav({components, selectedNav, onNavClick}) {
             <div className="nav-list">
                 {components.map( (navitem, index) => {
                     return (
-                        <NavItem navitem={navitem} onClick={() => handleClick(index)} active={index === selectedNav}/>
+                        /*<NavItem navitem={navitem} onClick={() => handleNavChange(index)} active={index === selectedTab}/>*/
+                        <a className={navitem.name + ` nav-item ${index === selectedTab ? 'active' : '' }`} onClick={handleNavClick} >
+                            <span>{navitem.name.replace('-',' ')}</span>
+                        </a>
                     )
                 })}
             </div>
