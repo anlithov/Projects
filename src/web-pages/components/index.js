@@ -29,16 +29,14 @@ export default function Components() {
         {name: 'text-fields', content: () => <TextFields/>},
     ]
 
-    const [selectedNav, setSelectedNav] = useState(0)
+    const [selectedTab, setSelectedTab] = useState(0)
 
-    function handleNavClick(index) {
-        setSelectedNav(index)
-    }
+    function handleChange
     return (
         <div className="page-components">
             <Nav selectedNav={selectedNav}
                  components={components}
-                 onNavClick={handleNavClick}/>
+                 onChange={handleChange()}/>
             <Showdown
                 components={components}
                 selectedNav={selectedNav}/>
