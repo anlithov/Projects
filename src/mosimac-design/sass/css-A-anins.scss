@@ -1,0 +1,33 @@
+@keyframes golinedot {
+    0% {
+        transform: translate(20px, 0px);
+    }
+    99.99999999% {
+        transform: translate(960px, 0px);
+    }
+    100% {
+        transform: translate(20px, 0px);
+    }
+}
+@keyframes bupdowmgggg {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    40% {
+        transform: translate(0px, -5px) scaleY(0.9) scaleX(1.1);
+    }
+    50% {
+        transform: translate(0px, -2px) scaleY(1.1);
+    }
+    70% {
+        transform: translate(0px, 3px) scaleY(1) scaleX(1);
+    }
+    85% {
+        transform: translate(0px, 5px) scaleY(0.9) scaleX(1.2);
+    }
+
+    100% {
+        transform: translate(0px, 0px) scaleY(1) scaleX(1);
+    }
+}
+

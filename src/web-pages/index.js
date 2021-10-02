@@ -6,11 +6,12 @@ import {
 } from "react-router-dom";
 import Design from './design';
 import Typography from './typography'
-import Components from './components'
 import About from './about'
+import Components from "./components/index";
 import Contact from './contact'
 
-const Webpages = () => {
+export default function Webpages() {
+
     return(
         <div id="content">
             <Router>
@@ -23,4 +24,3 @@ const Webpages = () => {
         </div>
     );
 };
-export default Webpages;

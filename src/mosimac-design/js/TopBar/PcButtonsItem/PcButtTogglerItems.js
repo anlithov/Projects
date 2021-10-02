@@ -2,7 +2,7 @@ import React from "react";
 
 
 
-export default function TopBarPcTogItem({ toggler }) {
+export default function PcButtTogglerItems({ toggler }) {
     function setTheme(themeName) {
         localStorage.setItem('theme', themeName);
         document.documentElement.className = themeName;

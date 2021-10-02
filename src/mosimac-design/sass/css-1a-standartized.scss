@@ -11,6 +11,7 @@ input.submit,
     display: inline-flex;
     align-items: center;
 
+    font-family: "Oswald", sans-serif;
     font-size: 0.875em;
     padding: 0.5em 1.5em 0.6em;
     border-radius: 2em;
@@ -246,7 +247,7 @@ input.submit,
     border-radius: 1.3em;
     margin-bottom: 0.5em;
     .l-item {
-        font-family: "Arimo";
+        font-family: "Arimo", sans-serif;
         display: inline-flex;
         width: 100%;
         padding: 0.5em 1.2em;
@@ -302,13 +303,10 @@ input.submit,
     }
 }
 
-div#page {
-    position: relative;
-    margin-top: 0em;
-}
 
 div#content {
     position: relative;
+    padding-top: 0;
     width: 100%;
     min-height: calc(var(--vh, 1vh) * 100 - 20em);
     main > * {
@@ -530,18 +528,15 @@ div#slide-out * {
 }
 
 @media only screen and (min-width: 900px) {
-    div#page {
-        position: relative;
-        display: inline-flex;
-        flex-wrap: wrap;
-        margin: 6em auto;
+    div#content {
+        padding-top: 6em;
         width: 100%;
     }
 }
 
 @media only screen and (min-width: 1200px) {
-    div#page {
-        margin: 9em auto;
+    div#content {
+        padding-top: 9em;
     }
     .page-numbers.next,
     .page-numbers.prev {

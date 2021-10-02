@@ -2,10 +2,10 @@
 import React from "react";
 
 
-export default function TopBarPcButtItem(props) {
+export default function PcButtItem(props) {
     return (
         <div className={'pcm-button to-' + props.pcbutt.name}>
-            <a className="">
+            <a href={'./' + props.pcbutt.name} className="">
                 <div className="item">
                     {props.pcbutt.svg}
                 </div>
