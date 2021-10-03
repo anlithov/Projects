@@ -1,5 +1,8 @@
 import React, {useEffect} from "react";
 import Prism from "prismjs";
+import Button from "../../../../mosimac-design/js/Button";
+import BadgeButton from "../../../../mosimac-design/js/BadgeButton";
+import {ReactComponent as Soups} from "../../../../svg/soups.svg";
 
 export default function Buttons() {
     useEffect(() => {
@@ -16,23 +19,16 @@ export default function Buttons() {
                 </h3>
                 <div className="showcase buttons">
                     <section>
-                        <a className="btn">
-                            <span>Button</span>
-                        </a>
-                        <a className="btn icon-right">
-                            <span>Button</span>
-                            <i className="material-icons">call_to_action</i>
-                        </a>
-
-                        <a className="btn icon-left">
-                            <span>Button</span>
-                            <i className="material-icons">arrow_downward</i>
-                        </a>
+                        <Button name="Button" type="btn" />
+                        <Button name="Button" type="btn" iconRight="call_to_action" />
+                        <Button name="Button" type="btn" iconLeft="arrow_downward" />
+                        <Button name="Button" type="btn" iconLeft={<Soups/>} />
                     </section>
                 </div>
                 <pre>
                     <code className="language-html">
                         {`
+<!--HTML-->
 <a className="btn">
     <span>Button</span>
 </a>
@@ -43,7 +39,12 @@ export default function Buttons() {
 <a className="btn icon-left">
     <span>Button</span>
     <i className="material-icons">arrow_downward</i>
-</a>                      
+</a>            
+
+<!--JSX-->
+<Button name="Button" type="btn" />
+<Button name="Button" type="btn" iconRight="call_to_action" />
+<Button name="Button" type="btn" iconLeft="arrow_downward" />           
                         `}
                     </code>
                 </pre>
@@ -62,9 +63,13 @@ export default function Buttons() {
                 <pre>
                     <code className="language-html">
                         {`
+<!--HTML-->
 <a className="btn2">
     <span>Button</span>
 </a>
+
+<!--JSX-->
+<Button name="Button" type="btn2" />
                         `}
                     </code>
                 </pre>
@@ -83,9 +88,13 @@ export default function Buttons() {
                 <pre>
                     <code className="language-html">
                         {`
+<!--HTML-->
 <a className="btn3">
     <span>Button</span>
 </a>
+
+<!--JSX-->
+<Button name="Button" type="btn3" />
                         `}
                     </code>
                 </pre>
@@ -104,9 +113,13 @@ export default function Buttons() {
                 <pre>
                     <code className="language-html">
                         {`
+<!--HTML-->
 <a className="btn-outlined">
     <span>Button</span>
 </a>   
+
+<!--JSX-->
+<Button name="Button" type="btn-outlined" />
                         `}
                     </code>
                 </pre>
@@ -125,9 +138,13 @@ export default function Buttons() {
                 <pre>
                     <code className="language-html">
                         {`
+<!--HTML-->
 <a className="btn-flat">
     <span>Button</span>
-</a>   
+</a> 
+
+<!--JSX-->
+<Button name="Button" type="btn-flat" /> 
                         `}
                     </code>
                 </pre>
@@ -138,6 +155,7 @@ export default function Buttons() {
                 </h3>
                 <div className="showcase buttons">
                     <section>
+                        <Button name="Button" type="btn" addClass={["disabled"]}/>
                         <a className="btn disabled">
                             <span>Button</span>
                         </a>
@@ -166,7 +184,10 @@ export default function Buttons() {
 </a>
 <a className="btn-flat disabled">
     <span>Button</span>
-</a>  
+</a> 
+
+<!--JSX-->
+<Button name="Button" type="btn" addClass={["disabled"]}/> 
                         `}
                     </code>
                 </pre>
@@ -180,28 +201,14 @@ export default function Buttons() {
             </p>
             <div className="part-block">
                 <h3>
-                    Bagde button
+                    Badge button
                 </h3>
                 <div className="showcase buttons">
                     <section>
-                        <a className="btn-badge">
-                            <div className="badge">
-                                <i className="material-icons">blur_on</i>
-                            </div>
-                        </a>
-                        <a className="btn-badge badge-right yellow">
-                            <span>Button</span>
-                            <div className="badge">
-                                <i className="material-icons">bubble_chart</i>
-                            </div>
-                        </a>
-                        <a className="btn-badge badge-left red">
-                            <span>Button</span>
-                            <div className="badge">
-                                <i className="material-icons">business_center</i>
-                            </div>
-                        </a>
-
+                        <BadgeButton badgeRight="blur_on" addClass={["green"]}/>
+                        <BadgeButton name="Button" badgeRight="bubble_chart" addClass={["yellow"]}/>
+                        <BadgeButton name="Button" badgeLeft="business_center" addClass={["red"]}/>
+                        <BadgeButton name="Button" badgeLeft={<Soups/>} addClass={["red"]}/>
                     </section>
                 </div>
                 <pre>

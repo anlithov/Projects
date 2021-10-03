@@ -19,17 +19,23 @@ input.submit,
     font-weight: 500;
     transition: 0.3s all;
     cursor: pointer;
-    i {
+    .icon {
         position: absolute;
         top: 0;
         display: flex;
         align-items: center;
         justify-content: center;
         height: 100%;
-        width: 2.8em;
-        font-size: 17px;
-        color: var(--body-color);
+        width: 3.5em;
         transition: 0.3s all;
+        i {
+            font-size: 17px;
+        }
+        svg {
+            width: 60%;
+            height: 60%;
+        }
+
     }
     span {
         font-weight: 600;
@@ -38,13 +44,13 @@ input.submit,
     }
     &.icon-left {
         padding: 0.5em 1.5em 0.6em 3.5em;
-        i {
+        .icon {
             left: 0;
         }
     }
     &.icon-right {
         padding: 0.5em 3.5em 0.6em 1.5em;
-        i {
+        .icon {
             right: 0;
         }
     }
@@ -120,6 +126,10 @@ input.submit,
         transition: 0.1s;
         i {
             color: #202124;
+        }
+        svg {
+            width: 60%;
+            height: 60%;
         }
     }
     &.badge-right {
@@ -206,7 +216,7 @@ input.submit,
             background: var(--btn-back-hover);
             .badge {
                 opacity: 1;
-                i {
+                i, svg {
                     animation: bupdowmgggg 0.6s linear;
                 }
             }
