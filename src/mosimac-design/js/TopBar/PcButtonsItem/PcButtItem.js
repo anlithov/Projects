@@ -2,15 +2,15 @@
 import React from "react";
 
 
-export default function PcButtItem(props) {
+export default function PcButtItem({pcbutt}) {
     return (
-        <div className={'pcm-button to-' + props.pcbutt.name}>
-            <a href={'./' + props.pcbutt.name} className="">
+        <div className={'pcm-button to-' + pcbutt.name}>
+            <a href={'./' + pcbutt.name} className="">
                 <div className="item">
-                    {props.pcbutt.svg}
+                    {pcbutt.svg}
                 </div>
                 <span className="pcm-name">
-                    {props.pcbutt.name}
+                    {pcbutt.name}
                 </span>
             </a>
         </div>

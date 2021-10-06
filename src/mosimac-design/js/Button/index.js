@@ -11,13 +11,13 @@ export default function Button({name, type="btn", iconRight , iconLeft, addClass
     }
 
     return (
-        <a className={classes.join(' ')}>
+        <div className={classes.join(' ')}>
             {name && <span>{name}</span>}
             <div className='icon'>
                 {checkIcon(iconRight)}
                 {checkIcon(iconLeft)}
             </div>
-        </a>
+        </div>
     )
 
 }

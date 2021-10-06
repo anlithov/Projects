@@ -11,13 +11,13 @@ export default function BadgeButton({name, type="btn-badge", badgeRight , badgeL
     }
 
     return (
-        <a className={classes.join(' ')}>
+        <div className={classes.join(' ')}>
             {name && <span>{name}</span>}
             <div className="badge">
                 {checkBagde(badgeRight)}
                 {checkBagde(badgeLeft)}
             </div>
-        </a>
+        </div>
     )
 
 }

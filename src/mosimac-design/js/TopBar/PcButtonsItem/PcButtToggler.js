@@ -6,7 +6,7 @@ export default function PcButtToggler(props) {
     return (
         <div className="theme-boxlist">
             {props.togglers.map(toggler => {
-                return <PcButtTogglerItems toggler={toggler}/>
+                return <PcButtTogglerItems key={toggler.name} toggler={toggler}/>
             })}
         </div>
     )
