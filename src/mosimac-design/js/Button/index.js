@@ -1,7 +1,8 @@
-import React from "react";
+import React from "react"
+import './index.scss'
 
-export default function Button({name, type="btn", iconRight , iconLeft, addClass}) {
-    const classes = [type]
+export default function Button({name, variant="btn", iconRight , iconLeft, addClass}) {
+    const classes = [variant]
     iconRight && classes.push("icon-right")
     iconLeft && classes.push("icon-left")
     addClass && classes.push.apply(classes, addClass)

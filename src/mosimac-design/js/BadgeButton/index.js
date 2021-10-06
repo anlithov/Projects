@@ -1,4 +1,5 @@
 import React from "react";
+import './index.scss'
 
 export default function BadgeButton({name, type="btn-badge", badgeRight , badgeLeft, addClass}) {
     const classes = [type]

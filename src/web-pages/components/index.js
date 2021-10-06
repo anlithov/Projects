@@ -29,12 +29,13 @@ export default function Components() {
         {name: 'select', content: () => <Select/>},
         {name: 'text-fields', content: () => <TextFields/>},
     ]
-
     const [selectedTab, setSelectedTab] = useState(0)
 
     function handleChange(index) {
         setSelectedTab(index)
     }
+
+
     return (
         <div className="page-components">
             <Nav components={components}

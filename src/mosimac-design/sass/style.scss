@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  background: var(--body-back);
+  transition: 0.2s ease;
+}
 
 div {
   display: block;
@@ -97,18 +102,6 @@ html {
   box-sizing: border-box;
 }
 
-body {
-  background: var(--body-back);
-  transition: 0.2s ease;
-  /* Fallback for when there is no custom background color defined. */
-}
-
-hr {
-  background: #ffffff00;
-  border: 0;
-  height: 1px;
-  margin: 15px 0;
-}
 
 img {
   height: auto;

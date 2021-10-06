@@ -1,18 +1,17 @@
 
 import React from "react";
+import {NavLink} from "react-router-dom";
 
 
 export default function PcButtItem(props) {
     return (
-        <div className={'pcm-button to-' + props.pcbutt.name}>
-            <a href={'./' + props.pcbutt.name} className="">
-                <div className="item">
-                    {props.pcbutt.svg}
-                </div>
-                <span className="pcm-name">
-                    {props.pcbutt.name}
-                </span>
-            </a>
-        </div>
+        <NavLink className="pcm-button" to={'./' + props.pcbutt.name}>
+            <div className="item">
+                {props.pcbutt.svg}
+            </div>
+            <span className="pcm-name">
+                {props.pcbutt.name}
+            </span>
+        </NavLink>
     )
 }

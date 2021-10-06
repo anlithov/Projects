@@ -1,17 +1,14 @@
-import React, {useEffect} from "react";
-import Prism from "prismjs";
+import React from "react";
 import Button from "../../../../mosimac-design/js/Button";
 import BadgeButton from "../../../../mosimac-design/js/BadgeButton";
 import {ReactComponent as Soups} from "../../../../svg/soups.svg";
 
 export default function Buttons() {
-    useEffect(() => {
-        Prism.highlightAll();
-    });
+
     return (
         <div>
             <p className="description">
-                There are 4 main button types in mosimac design. The contained button is a standard button mostly used on pages. The alternative one is another version of contained but has light acsent. Outlined button is used for more emphasis due to additional border. And flat buttons are used for less important actions.
+                There are 4 main button variants in mosimac design. The contained button is a standard button mostly used on pages. The alternative one is another version of contained but has light acsent. Outlined button is used for more emphasis due to additional border. And flat buttons are used for less important actions.
             </p>
             <div className="part-block">
                 <h3>
@@ -19,10 +16,10 @@ export default function Buttons() {
                 </h3>
                 <div className="showcase buttons">
                     <section>
-                        <Button name="Button" type="btn" />
-                        <Button name="Button" type="btn" iconRight="call_to_action" />
-                        <Button name="Button" type="btn" iconLeft="arrow_downward" />
-                        <Button name="Button" type="btn" iconLeft={<Soups/>} />
+                        <Button name="Button" variant="btn">Name</Button>
+                        <Button name="Button" variant="btn" iconRight="call_to_action" />
+                        <Button name="Button" variant="btn" iconLeft="arrow_downward" />
+                        <Button name="Button" variant="btn" iconLeft={<Soups/>} />
                     </section>
                 </div>
                 <pre>
@@ -42,9 +39,9 @@ export default function Buttons() {
 </a>            
 
 <!--JSX-->
-<Button name="Button" type="btn" />
-<Button name="Button" type="btn" iconRight="call_to_action" />
-<Button name="Button" type="btn" iconLeft="arrow_downward" />           
+<Button name="Button" variant="btn" />
+<Button name="Button" variant="btn" iconRight="call_to_action" />
+<Button name="Button" variant="btn" iconLeft="arrow_downward" />           
                         `}
                     </code>
                 </pre>
@@ -69,7 +66,7 @@ export default function Buttons() {
 </a>
 
 <!--JSX-->
-<Button name="Button" type="btn2" />
+<Button name="Button" variant="btn2" />
                         `}
                     </code>
                 </pre>
@@ -94,7 +91,7 @@ export default function Buttons() {
 </a>
 
 <!--JSX-->
-<Button name="Button" type="btn3" />
+<Button name="Button" variant="btn3" />
                         `}
                     </code>
                 </pre>
@@ -119,7 +116,7 @@ export default function Buttons() {
 </a>   
 
 <!--JSX-->
-<Button name="Button" type="btn-outlined" />
+<Button name="Button" variant="btn-outlined" />
                         `}
                     </code>
                 </pre>
@@ -144,7 +141,7 @@ export default function Buttons() {
 </a> 
 
 <!--JSX-->
-<Button name="Button" type="btn-flat" /> 
+<Button name="Button" variant="btn-flat" /> 
                         `}
                     </code>
                 </pre>
@@ -155,7 +152,7 @@ export default function Buttons() {
                 </h3>
                 <div className="showcase buttons">
                     <section>
-                        <Button name="Button" type="btn" addClass={["disabled"]}/>
+                        <Button name="Button" variant="btn" addClass={["disabled"]}/>
                         <a className="btn disabled">
                             <span>Button</span>
                         </a>
@@ -187,7 +184,7 @@ export default function Buttons() {
 </a> 
 
 <!--JSX-->
-<Button name="Button" type="btn" addClass={["disabled"]}/> 
+<Button name="Button" variant="btn" addClass={["disabled"]}/> 
                         `}
                     </code>
                 </pre>
@@ -196,7 +193,7 @@ export default function Buttons() {
                 More buttons
             </h1>
             <p className="description">
-                What follows below are buttons that goes beyond standard types. But they still mix in good overall into
+                What follows below are buttons that goes beyond standard variants. But they still mix in good overall into
                 design
             </p>
             <div className="part-block">

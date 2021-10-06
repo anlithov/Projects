@@ -3,8 +3,9 @@ import React from "react";
 export default function Nav({components, selectedTab, handleNavChange}) {
 
 
-    return (
 
+
+    return (
         <div className="nav-components">
             <div className="nav-title">
                 <span>
@@ -21,7 +22,5 @@ export default function Nav({components, selectedTab, handleNavChange}) {
                 })}
             </div>
         </div>
-
-
 )
 }
