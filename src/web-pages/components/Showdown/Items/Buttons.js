@@ -169,7 +169,7 @@ export default function Buttons() {
                     </section>
                 </div>
                 <pre>
-                    <code className="language-html">
+                    <code className="language-jsx">
                         {`
 <!--HTML-->
 <a className="btn disabled">

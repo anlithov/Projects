@@ -8,7 +8,7 @@ export default function PcButtList(props) {
     return (
         <nav className="pc pc-butts">
             {props.pcbutts.map(pcbutt => {
-                return <PcButtItem pcbutt={pcbutt}/>
+                return <PcButtItem key={pcbutt.name} pcbutt={pcbutt}/>
             })}
             <div className="theme-panel">
                 <div className="item theme">

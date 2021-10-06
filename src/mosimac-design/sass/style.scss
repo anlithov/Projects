@@ -100,7 +100,7 @@ html {
 body {
   background: var(--body-back);
   margin: 0;
-  transition: 0.2s ease;
+  transition: 0.2s ease background;
   /* Fallback for when there is no custom background color defined. */
 }
 

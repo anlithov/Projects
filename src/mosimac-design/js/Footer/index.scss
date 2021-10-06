@@ -173,6 +173,10 @@
       justify-content: center;
       height: 100%;
       padding: 0 1em;
+      border-radius: 1.5em;
+      span {
+        text-transform: capitalize;
+      }
       &:hover {
         .item svg {
           animation: bupdowmgggg 0.6s linear;

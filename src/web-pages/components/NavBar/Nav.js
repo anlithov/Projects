@@ -14,7 +14,7 @@ export default function Nav({components, selectedTab, handleNavChange}) {
             <div className="nav-list">
                 {components.map( (navitem, index) => {
                     return (
-                        <a className={navitem.name + ` nav-item ${index === selectedTab ? 'active' : '' }`} onClick={() => handleNavChange(index)} >
+                        <a className={navitem.name + ` nav-item ${index === selectedTab ? 'active' : '' }`} onClick={() => handleNavChange(index)} key={navitem.name}>
                             <span>{navitem.name.replace('-',' ')}</span>
                         </a>
                     )
