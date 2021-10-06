@@ -1,13 +1,11 @@
-import React, {useEffect} from "react";
-import Prism from "prismjs";
+import React from "react";
+
 import Button from "../../../../mosimac-design/js/Button";
 import BadgeButton from "../../../../mosimac-design/js/BadgeButton";
 import {ReactComponent as Soups} from "../../../../svg/soups.svg";
 
 export default function Buttons() {
-    useEffect(() => {
-        Prism.highlightAll();
-    });
+
     return (
         <div>
             <p className="description">
@@ -26,7 +24,7 @@ export default function Buttons() {
                     </section>
                 </div>
                 <pre>
-                    <code className="language-html">
+                    <code className="language-jsx">
                         {`
 <!--HTML-->
 <a className="btn">
@@ -61,7 +59,7 @@ export default function Buttons() {
                     </section>
                 </div>
                 <pre>
-                    <code className="language-html">
+                    <code className="language-jsx">
                         {`
 <!--HTML-->
 <a className="btn2">
@@ -86,7 +84,7 @@ export default function Buttons() {
                     </section>
                 </div>
                 <pre>
-                    <code className="language-html">
+                    <code className="language-jsx">
                         {`
 <!--HTML-->
 <a className="btn3">
@@ -111,7 +109,7 @@ export default function Buttons() {
                     </section>
                 </div>
                 <pre>
-                    <code className="language-html">
+                    <code className="language-jsx">
                         {`
 <!--HTML-->
 <a className="btn-outlined">
@@ -136,7 +134,7 @@ export default function Buttons() {
                     </section>
                 </div>
                 <pre>
-                    <code className="language-html">
+                    <code className="language-jsx">
                         {`
 <!--HTML-->
 <a className="btn-flat">
@@ -173,6 +171,7 @@ export default function Buttons() {
                 <pre>
                     <code className="language-html">
                         {`
+<!--HTML-->
 <a className="btn disabled">
     <span>Button</span>
 </a>
@@ -212,8 +211,9 @@ export default function Buttons() {
                     </section>
                 </div>
                 <pre>
-                    <code className="language-html">
+                    <code className="language-jsx">
                         {`
+<!--HTML-->
 <a className="btn-badge">
     <div className="badge">
         <i className="material-icons">blur_on</i>
@@ -228,9 +228,15 @@ export default function Buttons() {
 <a className="btn-badge badge-left red">
     <span>Button</span>
     <div className="badge">
-        <i className="material-icons">business_center</i>
+        <svg>...Soups...</svg>
     </div>
 </a>
+
+<!--JSX-->
+<BadgeButton badgeRight="blur_on" addClass={["green"]}/>
+<BadgeButton name="Button" badgeRight="bubble_chart" addClass={["yellow"]}/>
+<BadgeButton name="Button" badgeLeft="business_center" addClass={["red"]}/>
+<BadgeButton name="Button" badgeLeft={<Soups/>} addClass={["red"]}/>
                         `}
                     </code>
                 </pre>

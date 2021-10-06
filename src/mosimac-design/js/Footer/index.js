@@ -1,4 +1,5 @@
 import React from 'react'
+import "./index.scss"
 
 import {ReactComponent as Logo} from '../../../svg/logo.svg'
 import {ReactComponent as Design} from "../../../svg/design.svg";

@@ -1,4 +1,5 @@
 import React from "react";
+import "./index.scss"
 
 export default function Button({name, type="btn", iconRight , iconLeft, addClass}) {
     const classes = [type]

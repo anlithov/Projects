@@ -1,4 +1,6 @@
 import React, {useState} from 'react';
+import "./index.scss"
+
 import Nav from './NavBar/Nav'
 import Showdown from "./Showdown/Showdown";
 
