@@ -2,7 +2,7 @@ import React from "react";
 
 import Button from "../../../../components/forms/Button";
 import BadgeButton from "../../../../components/forms/BadgeButton";
-import {ReactComponent as Soups} from "../../../../assests/icons/soups.svg";
+import {ReactComponent as Soups} from "../../../../assets/icons/soups.svg";
 
 export default function Buttons() {
 

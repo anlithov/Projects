@@ -1,6 +1,6 @@
 import React from 'react'
 import "./index.scss"
-import {Hamburger} from "../../assests/icons";
+import {Hamburger} from "../../assets/icons";
 import PcButtList from "./PcButtList";
 
 

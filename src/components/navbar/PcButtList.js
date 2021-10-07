@@ -1,6 +1,6 @@
 import React from 'react'
 import PcButtItem from './PcButtItem'
-import {ReactComponent as ThemeTogg} from "../../assests/icons/theme-toggler.svg";
+import {ReactComponent as ThemeTogg} from "../../assets/icons/theme-toggler.svg";
 import PcButtToggler from "./PcButtToggler";
 
 

@@ -5,7 +5,7 @@ import {NavBar} from "./components/navbar";
 import {Footer} from "./components/footer";
 
 import {AboutScreen, ContactScreen, ComponentsScreen, DesignScreen, TypographyScreen} from "./screens";
-import {AboutSvg, ComponentsSvg, ContactSvg, DesignSvg, Logo, TypographySvg} from "./assests/icons";
+import {AboutSvg, ComponentsSvg, ContactSvg, DesignSvg, Logo, TypographySvg} from "./assets/icons";
 
 
 
