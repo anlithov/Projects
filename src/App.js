@@ -1,10 +1,10 @@
-import Webpages from "./web-pages";
+import ScreensRouter from "./router";
 
 
 function App() {
 
   return (
-      <Webpages />
+      <ScreensRouter/>
   )
 }
 

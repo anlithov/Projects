@@ -1,0 +1,76 @@
+p.description {
+  margin: 3em 0;
+}
+.p-components div#content {
+  display: flex;
+}
+section {
+  display: flex;
+}
+.showcase .list-block {
+  width: 220px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.part-block {
+  margin-bottom: 3em;
+  h3 {
+    margin-bottom: 0.5em;
+  }
+  section {
+    display: flex;
+    .btn {
+      margin-right: 0.5em;
+    }
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .page-components {
+    display: flex;
+  }
+  .nav-components {
+    width: 20%;
+    padding: 0 55px;
+    .nav-title {
+      font-size: 1.4em;
+      font-weight: 700;
+      flex-grow: 1;
+      color: var(--body-color);
+      padding: 0 1.6rem;
+    }
+  }
+  .nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2em;
+    border: 1px solid var(--btn-border);
+    border-radius: 1.5em;
+    .nav-item {
+      height: 2.6em;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding: 0 1.6rem;
+      transition: 0.1s all;
+      border-radius: 2em;
+      span {
+        color: var(--body-color);
+        font-family: 'Arimo', sans-serif;
+        font-weight: 600;
+        transition: 0.1s all;
+      }
+      &:hover, &.active {
+        background: var(--body-color);
+        span {
+          color: var(--body-back);
+        }
+      }
+    }
+  }
+
+  .showdown-components {
+    width: 80%;
+    padding: 0 30% 0 10%;
+  }
+}
