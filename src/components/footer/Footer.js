@@ -1,7 +1,7 @@
 import React from 'react'
 import "./index.scss"
 
-import PcButtList from "./PcButtList/PcButtList";
+import PcButtList from "./PcButtList";
 
 export default function Footer({menuLogo, menuButtons}) {
 

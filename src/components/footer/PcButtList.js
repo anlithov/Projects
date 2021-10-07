@@ -1,4 +1,4 @@
-import PcButtItem from "../../navbars/TopBar/PcButtItem";
+import PcButtItem from "../navbar/PcButtItem";
 import React from "react";
 
 export default function PcButtList(props) {

@@ -1,7 +1,9 @@
 import React from "react";
 import {BrowserRouter, Route, Switch} from "react-router-dom";
-import {TopBar} from "./components/navbars";
-import Footer from "./components/footers";
+
+import {NavBar} from "./components/navbar";
+import {Footer} from "./components/footer";
+
 import {AboutScreen, ContactScreen, ComponentsScreen, DesignScreen, TypographyScreen} from "./screens";
 import {AboutSvg, ComponentsSvg, ContactSvg, DesignSvg, Logo, TypographySvg} from "./assests/icons";
 
@@ -30,7 +32,7 @@ export default function ScreensRouter() {
     ]
     return(
         <BrowserRouter>
-            <TopBar menuLogo={menuLogo} menuButtons={menuButtons} themeList={themeList}/>
+            <NavBar menuLogo={menuLogo} menuButtons={menuButtons} themeList={themeList}/>
             <div id="content">
                 <Switch>
                     <Route exact path="/" component= {DesignScreen} />
